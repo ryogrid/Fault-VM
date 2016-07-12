@@ -1,0 +1,127 @@
+
+experiment_base.c,581
+#define MEMORY_SIZE 13,265
+#define ATTACABLE_BYTES 14,298
+#define EX_COUNT 15,348
+#define LOG_FILENAME_BASE 16,368
+#define SLEEP_SECONDS 17,411
+#define GUEST_PORT 20,530
+#define DESTROY_WAIT_SECONDS 21,571
+#define GUEST_NAME 22,603
+#define GUEST_FILE_PATH 23,632
+#define SNAPSHOT_BASE 24,700
+char ip_addr[ip_addr26,737
+int init(29,801
+int inject_bit(43,1110
+int inject_byte(59,1473
+int inject_page(72,1762
+int is_guest_dead(88,2112
+int cleanup(138,3235
+int create_domain_with_xc(142,3301
+int destroy_domain_with_xc(161,3710
+int restore_domain_with_xc(180,4134
+
+experiment_base.h,302
+#define MEMORY_SIZE 10,398
+#define ATTACABLE_BYTES 11,430
+#define EX_COUNT 12,479
+#define LOG_FILENAME_BASE 13,498
+#define SLEEP_SECONDS 14,540
+#define GUEST_PORT 16,610
+#define DESTROY_WAIT_SECONDS 17,634
+#define GUEST_NAME 18,665
+#define GUEST_FILE_PATH 19,693
+#define SNAPSHOT_BASE 20,760
+
+experiment_once.c,17
+int main(21,418
+
+experiment_once_lvs.c,70
+#define BIT_SLEEP_SEC 22,468
+double get_sec(24,499
+int main(31,622
+
+file_util.c,83
+FILE *file_open(file_open5,63
+int file_close(16,223
+int file_write_line(20,266
+
+from_head_access.c,305
+#define MEMORY_SIZE 10,200
+#define ATTACABLE_BYTES 11,233
+#define EX_COUNT 12,283
+#define LOG_FILENAME 13,305
+#define SLEEP_SECONDS 14,346
+int main(22,601
+int init(70,1776
+int inject_bit(84,2085
+int inject_byte(100,2448
+int inject_page(113,2737
+int is_guest_dead(129,3087
+int cleanup(140,3326
+
+random_with_pause.c,704
+#define MEMORY_SIZE 18,364
+#define ATTACABLE_BYTES 19,397
+#define INJECT_BITS_END 20,447
+#define BITS_SLICE 21,477
+#define EX_COUNT 22,501
+#define LOG_FILENAME 23,521
+#define SLEEP_SECONDS 24,562
+#define GUEST_IP_ADDR 25,588
+#define GUEST_PORT 26,628
+#define DESTROY_WAIT_SECONDS 27,653
+#define WAIT_TO_ALIVE_CHECK_SECONDS 28,685
+#define GUEST_NAME 29,724
+#define GUEST_FILE_PATH 30,753
+#define SNAPSHOT_PATH 31,821
+int main(43,1209
+int init(173,4572
+int inject_bit(187,4881
+int inject_byte(203,5244
+int inject_page(216,5533
+int is_guest_dead(232,5883
+int cleanup(281,6974
+int create_domain_with_xc(285,7040
+int destroy_domain_with_xc(304,7449
+int restore_domain_with_xc(323,7857
+
+tcp_util.c,246
+int tcp_bind(7,120
+int tcp_accept(39,762
+tcp_open_stream(44,828
+static int sockaddr_in_init(66,1210
+tcp_connect(93,2112
+tcp_print_host(117,2623
+static tcp_print_sockaddr(126,2811
+tcp_print_peeraddr(137,3109
+void tcp_set_timeout(152,3500
+
+tcp_util.h,27
+#define BUFFERSIZE 21,925
+
+test_memory_alloc.c,533
+#define MEMORY_SIZE 18,364
+#define ATTACABLE_BYTES 19,397
+#define EX_COUNT 20,447
+#define LOG_FILENAME 21,468
+#define SLEEP_SECONDS 22,509
+#define GUEST_IP_ADDR 23,535
+#define GUEST_PORT 24,575
+#define DESTROY_WAIT_SECONDS 25,600
+#define GUEST_NAME 26,632
+#define GUEST_FILE_PATH 27,661
+int main(37,1019
+int init(99,2522
+int inject_bit(113,2831
+int inject_byte(129,3194
+int inject_page(142,3483
+int is_guest_dead(158,3833
+int cleanup(207,4924
+int create_domain_with_xc(211,4990
+int destroy_domain_with_xc(230,5399
+
+test_random_access.c,18
+int main(42,1311
+
+file_util.h,0

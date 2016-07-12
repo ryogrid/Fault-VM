@@ -1,0 +1,933 @@
+Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+------------[ cut here ]------------
+kernel BUG at mm/slab.c:607!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c0466beb>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at free_block+0x46/0xdc
+eax: 00000000   ebx: db772014   ecx: 00000004   edx: c266be60
+esi: 00000004   edi: 735f3676   ebp: db775a80   esp: dffeaf20
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c05facb9 00000004 00000000 db772014 db772014 00000004 db772000 ddc6bf40 
+       c0466cf5 00000000 db775a80 ddc6bf40 db775a80 dfd874c0 00000286 c0468008 
+       00000000 00000000 c1405fe0 c1405fe4 c043210c c0467f9a 00000000 dfd874d4 
+Call Trace:
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 00 00 00 8b 44 24 0c 8b 38 8d 97 00 00 00 40 c1 ea 0c c1 e2 05 03 15 90 36 79 c0 8b 02 f6 c4 40 74 03 8b 52 0c 8b 02 84 c0 78 08 <0f> 0b 5f 02 05 0f 62 c0 8b 5a 1c 8b 54 24 24 89 d8 8b b4 95 90 
+EIP: [<c0466beb>] free_block+0x46/0xdc SS:ESP 0068:dffeaf20
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+------------[ cut here ]------------
+kernel BUG at mm/slab.c:607!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c0466beb>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at free_block+0x46/0xdc
+eax: 80000000   ebx: dff8c014   ecx: 00000001   edx: c1199980
+esi: 00000001   edi: cccccccc   ebp: dff8fcc0   esp: dffeaf20
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c05facb9 00000001 00000000 dff8c014 dff8c014 00000001 dff8c000 dfd96580 
+       c0466cf5 00000000 dff8fcc0 dfd96580 dff8fcc0 dfd874c0 00000286 c0468008 
+       00000000 00000000 c1405fe0 c1405fe4 c043210c c0467f9a 00000000 dfd874d4 
+Call Trace:
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 00 00 00 8b 44 24 0c 8b 38 8d 97 00 00 00 40 c1 ea 0c c1 e2 05 03 15 90 36 79 c0 8b 02 f6 c4 40 74 03 8b 52 0c 8b 02 84 c0 78 08 <0f> 0b 5f 02 05 0f 62 c0 8b 5a 1c 8b 54 24 24 89 d8 8b b4 95 90 
+EIP: [<c0466beb>] free_block+0x46/0xdc SS:ESP 0068:dffeaf20
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+------------[ cut here ]------------
+kernel BUG at mm/slab.c:594!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c0466ae0>]    Not tainted VLI
+EFLAGS: 00010246   (2.6.18-8.el5 #1) 
+EIP is at kmem_cache_free+0x29/0x6d
+eax: 80000000   ebx: c1405d40   ecx: dfdcf280   edx: c102c000
+esi: d4f658b8   edi: c1600300   ebp: 00000000   esp: c0717fb8
+ds: 007b   es: 007b   ss: 0068
+Process echo_server.out (pid: 1648, ti=c0717000 task=dd9d5aa0 task.ti=dd9e4000)
+Stack: c1405d40 d4f658b8 00000009 c04330e5 c1405dc0 00000000 00000009 c04333d9 
+       c0428285 00000001 c06c9b28 00000009 c04281cf dd9e4f48 dd9e4000 00000246 
+       d4e49ca8 c0406461 
+Call Trace:
+ [<c04330e5>] __rcu_process_callbacks+0xef/0x152
+ [<c04333d9>] rcu_process_callbacks+0x20/0x40
+ [<c0428285>] tasklet_action+0x55/0xaf
+ [<c04281cf>] __do_softirq+0x5a/0xbb
+ [<c0406461>] do_softirq+0x52/0x9d
+ [<c0428014>] local_bh_enable_ip+0x33/0x3e
+ [<c05c7c84>] tcp_close+0x25a/0x50c
+ [<c05ded28>] inet_release+0x43/0x48
+ [<c059b138>] sock_release+0x11/0x86
+ [<c059b1d3>] sock_close+0x26/0x2a
+ [<c046b623>] __fput+0x9c/0x167
+ [<c046910f>] filp_close+0x4e/0x54
+ [<c0403eff>] syscall_call+0x7/0xb
+ =======================
+Code: ff ff 57 89 d7 8d 92 00 00 00 40 89 c1 c1 ea 0c c1 e2 05 03 15 90 36 79 c0 56 53 8b 02 f6 c4 40 74 03 8b 52 0c 8b 02 84 c0 78 08 <0f> 0b 52 02 05 0f 62 c0 39 4a 18 74 08 0f 0b 99 0d 05 0f 62 c0 
+EIP: [<c0466ae0>] kmem_cache_free+0x29/0x6d SS:ESP 0068:c0717fb8
+ <0>Kernel panic - not syncing: Fatal exception in interrupt
+ Trying 127.0.0.1...
+Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+list_del corruption. prev->next should be ddaf3000, but was ddaf3004
+------------[ cut here ]------------
+kernel BUG at lib/list_debug.c:65!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c04e0260>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at list_del+0x18/0x5c
+eax: 00000048   ebx: ddaf3000   ecx: c06297c6   edx: dffeaf10
+esi: dfff7c40   edi: ddaf3128   ebp: dfdcfa80   esp: dffeaf0c
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c06297c6 ddaf3000 ddaf3004 ddaf3000 c0466c08 c05facb9 00000011 00000000 
+       dfdcd814 dfdcd814 00000011 dfdcd800 dfff7c40 c0466cf5 00000000 dfdcfa80 
+       dfff7c40 dfdcfa80 dfd874c0 00000286 c0468008 00000000 00000000 c1405fe0 
+Call Trace:
+ [<c0466c08>] free_block+0x63/0xdc
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 51 04 8d 46 0c 5b 5e 5f e9 62 00 00 00 89 c3 eb eb 90 90 53 89 c3 8b 40 04 8b 00 39 d8 74 17 50 53 68 c6 97 62 c0 e8 04 3f f4 ff <0f> 0b 41 00 03 98 62 c0 83 c4 0c 8b 03 8b 40 04 39 d8 74 17 50 
+EIP: [<c04e0260>] list_del+0x18/0x5c SS:ESP 0068:dffeaf0c
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+list_del corruption. next->prev should be ddf1a000, but was 40ddf1a0
+------------[ cut here ]------------
+kernel BUG at lib/list_debug.c:70!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c04e0280>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at list_del+0x38/0x5c
+eax: 00000048   ebx: ddf1a000   ecx: c0629814   edx: dffeaf10
+esi: dfff7d40   edi: ddf1a040   ebp: dfdcfd80   esp: dffeaf0c
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c0629814 ddf1a000 40ddf1a0 ddf1a000 c0466c08 c05facb9 00000003 00000001 
+       dfff3e98 dfff3e94 00000003 dfff3e80 dfff7d40 c0466cf5 00000000 dfdcfd80 
+       dfff7d40 dfdcfd80 dfd874c0 00000286 c0467fdf 00000000 00000000 c1405fe0 
+Call Trace:
+ [<c0466c08>] free_block+0x63/0xdc
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0467fdf>] cache_reap+0x45/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 53 68 c6 97 62 c0 e8 04 3f f4 ff 0f 0b 41 00 03 98 62 c0 83 c4 0c 8b 03 8b 40 04 39 d8 74 17 50 53 68 14 98 62 c0 e8 e4 3e f4 ff <0f> 0b 46 00 03 98 62 c0 83 c4 0c 8b 13 8b 43 04 89 42 04 89 10 
+EIP: [<c04e0280>] list_del+0x38/0x5c SS:ESP 0068:dffeaf0c
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+------------[ cut here ]------------
+kernel BUG at mm/slab.c:607!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c0466beb>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at free_block+0x46/0xdc
+eax: 80000000   ebx: dfddd014   ecx: 00000010   edx: c1199980
+esi: 00000010   edi: cccccccc   ebp: dff32c80   esp: dffeaf20
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c05facb9 00000010 00000000 dfddd014 dfddd014 00000010 dfddd000 dff60780 
+       c0466cf5 00000000 dff32c80 dff60780 dff32c80 dfd874c0 00000286 c0468008 
+       00000000 00000000 c1405fe0 c1405fe4 c043210c c0467f9a 00000000 dfd874d4 
+Call Trace:
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 00 00 00 8b 44 24 0c 8b 38 8d 97 00 00 00 40 c1 ea 0c c1 e2 05 03 15 90 36 79 c0 8b 02 f6 c4 40 74 03 8b 52 0c 8b 02 84 c0 78 08 <0f> 0b 5f 02 05 0f 62 c0 8b 5a 1c 8b 54 24 24 89 d8 8b b4 95 90 
+EIP: [<c0466beb>] free_block+0x46/0xdc SS:ESP 0068:dffeaf20
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+Bad page state in process 'yum-updatesd'
+page:c12ac000 flags:0x80000001 mapping:00000000 mapcount:0 count:0 (Not tainted)
+Trying to fix it up, but a reboot is needed
+Backtrace:
+ [<c0453611>] bad_page+0x4a/0x71
+ [<c0453915>] free_hot_cold_page+0x63/0x103
+ [<c045a0a9>] unmap_vmas+0x2a4/0x4ff
+ [<c045c971>] exit_mmap+0x68/0xdf
+ [<c042186c>] mmput+0x25/0x69
+ [<c042609c>] do_exit+0x1eb/0x746
+ [<c042666d>] sys_exit_group+0x0/0xd
+ [<c0403eff>] syscall_call+0x7/0xb
+ =======================
+------------[ cut here ]------------
+kernel BUG at mm/slab.c:607!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c0466beb>]    Tainted: G    B VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at free_block+0x46/0xdc
+eax: 00000000   ebx: df838014   ecx: 00000002   edx: c1800080
+esi: 00000002   edi: 0000425e   ebp: df80eac0   esp: dffeaf20
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c05facb9 00000002 00000000 df838014 df838014 00000002 df838000 dfe32580 
+       c0466cf5 00000000 df80eac0 dfe32580 df80eac0 dfd874c0 00000286 c0468008 
+       00000000 00000000 c1405fe0 c1405fe4 c043210c c0467f9a 00000000 dfd874d4 
+Call Trace:
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 00 00 00 8b 44 24 0c 8b 38 8d 97 00 00 00 40 c1 ea 0c c1 e2 05 03 15 90 36 79 c0 8b 02 f6 c4 40 74 03 8b 52 0c 8b 02 84 c0 78 08 <0f> 0b 5f 02 05 0f 62 c0 8b 5a 1c 8b 54 24 24 89 d8 8b b4 95 90 
+EIP: [<c0466beb>] free_block+0x46/0xdc SS:ESP 0068:dffeaf20
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+list_del corruption. next->prev should be db422000, but was 00000087
+------------[ cut here ]------------
+kernel BUG at lib/list_debug.c:70!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c04e0280>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at list_del+0x38/0x5c
+eax: 00000048   ebx: db422000   ecx: c0629814   edx: dffeaf10
+esi: ddc6bf40   edi: db422180   ebp: db775a80   esp: dffeaf0c
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c0629814 db422000 00000087 db422000 c0466c08 c05facb9 00000001 00000000 
+       c1682014 c1682014 00000001 c1682000 ddc6bf40 c0466cf5 00000000 db775a80 
+       ddc6bf40 db775a80 dfd874c0 00000286 c0467fdf 00000000 00000000 c1405fe0 
+Call Trace:
+ [<c0466c08>] free_block+0x63/0xdc
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0467fdf>] cache_reap+0x45/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 53 68 c6 97 62 c0 e8 04 3f f4 ff 0f 0b 41 00 03 98 62 c0 83 c4 0c 8b 03 8b 40 04 39 d8 74 17 50 53 68 14 98 62 c0 e8 e4 3e f4 ff <0f> 0b 46 00 03 98 62 c0 83 c4 0c 8b 13 8b 43 04 89 42 04 89 10 
+EIP: [<c04e0280>] list_del+0x38/0x5c SS:ESP 0068:dffeaf0c
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+------------[ cut here ]------------
+kernel BUG at mm/slab.c:607!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c0466beb>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at free_block+0x46/0xdc
+eax: 00000000   ebx: dfd84014   ecx: 00000008   edx: c1800000
+esi: 00000008   edi: 00000000   ebp: dfdc78c0   esp: dffeaf20
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c05facb9 00000008 00000000 dfd84014 dfd84014 00000008 dfd84000 dfdcc8c0 
+       c0466cf5 00000000 dfdc78c0 dfdcc8c0 dfdc78c0 dfd874c0 00000286 c0468008 
+       00000000 00000000 c1405fe0 c1405fe4 c043210c c0467f9a 00000000 dfd874d4 
+Call Trace:
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 00 00 00 8b 44 24 0c 8b 38 8d 97 00 00 00 40 c1 ea 0c c1 e2 05 03 15 90 36 79 c0 8b 02 f6 c4 40 74 03 8b 52 0c 8b 02 84 c0 78 08 <0f> 0b 5f 02 05 0f 62 c0 8b 5a 1c 8b 54 24 24 89 d8 8b b4 95 90 
+EIP: [<c0466beb>] free_block+0x46/0xdc SS:ESP 0068:dffeaf20
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+list_del corruption. next->prev should be ddd8c000, but was c8ddd8c0
+------------[ cut here ]------------
+kernel BUG at lib/list_debug.c:70!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c04e0280>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at list_del+0x38/0x5c
+eax: 00000048   ebx: ddd8c000   ecx: c0629814   edx: dffeaf10
+esi: ddcb09c0   edi: ddd8ca80   ebp: db775980   esp: dffeaf0c
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c0629814 ddd8c000 c8ddd8c0 ddd8c000 c0466c08 c05facb9 00000007 00000000 
+       c16a7014 c16a7014 00000007 c16a7000 ddcb09c0 c0466cf5 00000000 db775980 
+       ddcb09c0 db775980 dfd874c0 00000286 c0467fdf 00000000 00000000 c1405fe0 
+Call Trace:
+ [<c0466c08>] free_block+0x63/0xdc
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0467fdf>] cache_reap+0x45/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 53 68 c6 97 62 c0 e8 04 3f f4 ff 0f 0b 41 00 03 98 62 c0 83 c4 0c 8b 03 8b 40 04 39 d8 74 17 50 53 68 14 98 62 c0 e8 e4 3e f4 ff <0f> 0b 46 00 03 98 62 c0 83 c4 0c 8b 13 8b 43 04 89 42 04 89 10 
+EIP: [<c04e0280>] list_del+0x38/0x5c SS:ESP 0068:dffeaf0c
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+BUG: unable to handle kernel NULL pointer dereference at virtual address 000000d2
+ printing eip:
+c05ece08
+*pde = 00000000
+Oops: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c05ece08>]    Not tainted VLI
+EFLAGS: 00010202   (2.6.18-8.el5 #1) 
+EIP is at xfrm_policy_lookup+0x3a/0x31c
+eax: 00000002   ebx: 00000000   ecx: 00000002   edx: 00000002
+esi: c0717ee8   edi: dd9e6898   ebp: c0717e98   esp: c0717df0
+ds: 007b   es: 007b   ss: 0068
+Process echo_server.out (pid: 1648, ti=c0717000 task=dd9d5aa0 task.ti=dd9e4000)
+Stack: 00020000 00000000 00000002 00000220 00000000 00000003 dd9e601c 00000246 
+       00000220 dd9e6840 c0717ee8 dd9e6898 c1406800 c05ac39f c0717e48 c0717e44 
+       00020000 c0717e98 dfe41d98 00000000 00cf4b00 c0717e98 dfedfe00 00000002 
+Call Trace:
+ [<c05ac39f>] flow_cache_lookup+0x333/0x351
+ [<c05ed594>] __xfrm_policy_check+0x2e0/0x5d7
+ [<c05ecdce>] xfrm_policy_lookup+0x0/0x31c
+ [<c059fe16>] __alloc_skb+0x49/0xf4
+ [<c05cf9e9>] tcp_send_ack+0xde/0xe2
+ [<c05d59fb>] tcp_v4_rcv+0x3a0/0x931
+ [<c05bde84>] ip_local_deliver+0x159/0x205
+ [<c05bdcf1>] ip_rcv+0x3ef/0x429
+ [<c05a38e9>] netif_receive_skb+0x2c1/0x339
+ [<e086fd68>] cp_rx_poll+0x329/0x458 [8139cp]
+ [<c05a5284>] net_rx_action+0x92/0x175
+ [<c04281cf>] __do_softirq+0x5a/0xbb
+ [<c0406461>] do_softirq+0x52/0x9d
+ [<c0427fd6>] local_bh_enable+0x74/0x7f
+ [<c05a5595>] dev_queue_xmit+0x22e/0x24d
+ [<c05c2673>] ip_output+0x1c0/0x1f9
+ [<c05c1ef1>] ip_queue_xmit+0x390/0x3cf
+ [<c05cbbc8>] tcp_ack+0x1597/0x16c9
+ [<c05fd48f>] do_page_fault+0x20a/0x4b8
+ [<c05fd4f9>] do_page_fault+0x274/0x4b8
+ [<c05d433a>] tcp_v4_send_check+0x76/0xbb
+ [<c05cf83f>] tcp_transmit_skb+0x5e4/0x612
+ [<c05d10f2>] __tcp_push_pending_frames+0x68b/0x750
+ [<c05c722b>] tcp_sendmsg+0x2f8/0x994
+ [<c05c77d1>] tcp_sendmsg+0x89e/0x994
+ [<c0427fd6>] local_bh_enable+0x74/0x7f
+ [<c05de5e1>] inet_sendmsg+0x35/0x3f
+ [<c059a404>] do_sock_write+0xa3/0xaa
+ [<c059a854>] sock_aio_write+0x53/0x61
+ [<c059c9eb>] release_sock+0xc/0x91
+ [<c046a4ee>] do_sync_write+0xb6/0xf1
+ [<c0434e65>] autoremove_wake_function+0x0/0x2d
+ [<c047291f>] sys_fstat64+0x1e/0x23
+ [<c046adb8>] vfs_write+0xb2/0x143
+ [<c046b399>] sys_write+0x3c/0x63
+ [<c0403eff>] syscall_call+0x7/0xb
+ =======================
+Code: 24 0f b6 db 66 89 54 24 02 e8 b4 f5 00 00 8b 04 9d 00 a0 7b c0 89 5c 24 04 89 44 24 08 e9 09 02 00 00 8b 54 24 08 66 8b 4c 24 02 <66> 39 8a d0 00 00 00 0f 85 e9 01 00 00 89 d7 0f b7 c1 83 c7 34 
+EIP: [<c05ece08>] xfrm_policy_lookup+0x3a/0x31c SS:ESP 0068:c0717df0
+ <0>Kernel panic - not syncing: Fatal exception in interrupt
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+list_del corruption. prev->next should be c17fa000, but was c17fa040
+------------[ cut here ]------------
+kernel BUG at lib/list_debug.c:65!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c04e0260>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at list_del+0x18/0x5c
+eax: 00000048   ebx: c17fa000   ecx: c06297c6   edx: dffeaf10
+esi: dfdcc840   edi: c17fa604   ebp: dfdc77c0   esp: dffeaf0c
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c06297c6 c17fa000 c17fa040 c17fa000 c0466c08 c05facb9 00000004 00000000 
+       dfd82414 dfd82414 00000004 dfd82400 dfdcc840 c0466cf5 00000000 dfdc77c0 
+       dfdcc840 dfdc77c0 dfd874c0 00000286 c0467fdf 00000000 00000000 c1405fe0 
+Call Trace:
+ [<c0466c08>] free_block+0x63/0xdc
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0467fdf>] cache_reap+0x45/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 51 04 8d 46 0c 5b 5e 5f e9 62 00 00 00 89 c3 eb eb 90 90 53 89 c3 8b 40 04 8b 00 39 d8 74 17 50 53 68 c6 97 62 c0 e8 04 3f f4 ff <0f> 0b 41 00 03 98 62 c0 83 c4 0c 8b 03 8b 40 04 39 d8 74 17 50 
+EIP: [<c04e0260>] list_del+0x18/0x5c SS:ESP 0068:dffeaf0c
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+------------[ cut here ]------------
+kernel BUG at mm/slab.c:607!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c0466beb>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at free_block+0x46/0xdc
+eax: 00000000   ebx: dff88014   ecx: 00000060   edx: c252ecc0
+esi: 00000060   edi: 69766564   ebp: dff8f8c0   esp: dffeaf20
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c05facb9 00000060 00000000 dff88014 dff88014 00000060 dff88000 dfd96340 
+       c0466cf5 00000000 dff8f8c0 dfd96340 dff8f8c0 dfd874c0 00000286 c0468008 
+       00000000 00000000 c1405fe0 c1405fe4 c043210c c0467f9a 00000000 dfd874d4 
+Call Trace:
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 00 00 00 8b 44 24 0c 8b 38 8d 97 00 00 00 40 c1 ea 0c c1 e2 05 03 15 90 36 79 c0 8b 02 f6 c4 40 74 03 8b 52 0c 8b 02 84 c0 78 08 <0f> 0b 5f 02 05 0f 62 c0 8b 5a 1c 8b 54 24 24 89 d8 8b b4 95 90 
+EIP: [<c0466beb>] free_block+0x46/0xdc SS:ESP 0068:dffeaf20
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+list_add corruption. next->prev should be dd9e4fb0, but was 00001000
+------------[ cut here ]------------
+kernel BUG at lib/list_debug.c:26!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c04e02c0>]    Not tainted VLI
+EFLAGS: 00010246   (2.6.18-8.el5 #1) 
+EIP is at __list_add+0x1c/0x52
+eax: 00000048   ebx: 00b67ca0   ecx: c0629851   edx: dd9e4e7c
+esi: dd9e4fb0   edi: d4f650d0   ebp: dd9e4f98   esp: dd9e4e78
+ds: 007b   es: 007b   ss: 0068
+Process echo_server.out (pid: 1648, ti=dd9e4000 task=dd9d5aa0 task.ti=dd9e4000)
+Stack: c0629851 dd9e4fb0 00001000 dd9e4f98 d4f65090 d4f650d0 c047e337 d4f65090 
+       c17f73c0 dd9e4f70 c059b067 3232335b 35333435 5d333039 c17f7300 dd9e4f70 
+       c17f73c0 c046b933 01000000 c0403eff 0000000c dd9e4ea4 00000000 dd9e4f70 
+Call Trace:
+ [<c047e337>] d_instantiate+0x2f/0x64
+ [<c059b067>] sock_attach_fd+0x65/0xcc
+ [<c046b933>] get_empty_filp+0x99/0x15e
+ [<c0403eff>] syscall_call+0x7/0xb
+ [<c059bebc>] sys_accept+0xb8/0x1c0
+ [<c045a168>] unmap_vmas+0x363/0x4ff
+ [<c045bbea>] free_pgtables+0x86/0x93
+ [<c045c8af>] unmap_region+0xd1/0xf0
+ [<c059c06c>] sys_socketcall+0xa8/0x19e
+ [<c0406eb0>] do_syscall_trace+0xab/0xb1
+ [<c0403eff>] syscall_call+0x7/0xb
+ =======================
+Code: c7 43 04 00 02 20 00 c7 03 00 01 10 00 5b c3 57 89 c7 56 89 d6 53 8b 41 04 89 cb 39 d0 74 17 50 52 68 51 98 62 c0 e8 a4 3e f4 ff <0f> 0b 1a 00 03 98 62 c0 83 c4 0c 8b 06 39 d8 74 17 50 53 68 8e 
+EIP: [<c04e02c0>] __list_add+0x1c/0x52 SS:ESP 0068:dd9e4e78
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+------------[ cut here ]------------
+kernel BUG at mm/slab.c:607!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c0466beb>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at free_block+0x46/0xdc
+eax: 00000000   ebx: db772014   ecx: 00000020   edx: c266be60
+esi: 00000020   edi: 735f3676   ebp: db775a80   esp: dffeaf20
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c05facb9 00000020 00000000 db772014 db772014 00000020 db772000 ddc6bf40 
+       c0466cf5 00000000 db775a80 ddc6bf40 db775a80 dfd874c0 00000286 c0468008 
+       00000000 00000000 c1405fe0 c1405fe4 c043210c c0467f9a 00000000 dfd874d4 
+Call Trace:
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 00 00 00 8b 44 24 0c 8b 38 8d 97 00 00 00 40 c1 ea 0c c1 e2 05 03 15 90 36 79 c0 8b 02 f6 c4 40 74 03 8b 52 0c 8b 02 84 c0 78 08 <0f> 0b 5f 02 05 0f 62 c0 8b 5a 1c 8b 54 24 24 89 d8 8b b4 95 90 
+EIP: [<c0466beb>] free_block+0x46/0xdc SS:ESP 0068:dffeaf20
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+------------[ cut here ]------------
+kernel BUG at mm/slab.c:607!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c0466beb>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at free_block+0x46/0xdc
+eax: 80000000   ebx: dff3a014   ecx: 0000002c   edx: c1199980
+esi: 0000002c   edi: cccccccc   ebp: dff32980   esp: dffeaf20
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c05facb9 0000002c 00000000 dff3a014 dff3a014 0000002c dff3a000 dff60600 
+       c0466cf5 00000000 dff32980 dff60600 dff32980 dfd874c0 00000286 c0468008 
+       00000000 00000000 c1405fe0 c1405fe4 c043210c c0467f9a 00000000 dfd874d4 
+Call Trace:
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 00 00 00 8b 44 24 0c 8b 38 8d 97 00 00 00 40 c1 ea 0c c1 e2 05 03 15 90 36 79 c0 8b 02 f6 c4 40 74 03 8b 52 0c 8b 02 84 c0 78 08 <0f> 0b 5f 02 05 0f 62 c0 8b 5a 1c 8b 54 24 24 89 d8 8b b4 95 90 
+EIP: [<c0466beb>] free_block+0x46/0xdc SS:ESP 0068:dffeaf20
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+list_del corruption. next->prev should be ddecd000, but was dda75080
+------------[ cut here ]------------
+kernel BUG at lib/list_debug.c:70!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c04e0280>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at list_del+0x38/0x5c
+eax: 00000048   ebx: ddecd000   ecx: c0629814   edx: dffeaf10
+esi: dfff7c00   edi: ddecd580   ebp: dfdcf980   esp: dffeaf0c
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c0629814 ddecd000 dda75080 ddecd000 c0466c08 c0466899 00000002 00000001 
+       dfff3c98 dfff3c94 00000002 dfff3c80 dfff7c00 c0466cf5 00000000 dfdcf980 
+       dfff7c00 dfdcf980 dfd874c0 00000286 c0467fdf 00000000 00000000 c1405fe0 
+Call Trace:
+ [<c0466c08>] free_block+0x63/0xdc
+ [<c0466899>] kmem_freepages+0x82/0xa4
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0467fdf>] cache_reap+0x45/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 53 68 c6 97 62 c0 e8 04 3f f4 ff 0f 0b 41 00 03 98 62 c0 83 c4 0c 8b 03 8b 40 04 39 d8 74 17 50 53 68 14 98 62 c0 e8 e4 3e f4 ff <0f> 0b 46 00 03 98 62 c0 83 c4 0c 8b 13 8b 43 04 89 42 04 89 10 
+EIP: [<c04e0280>] list_del+0x38/0x5c SS:ESP 0068:dffeaf0c
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+BUG: unable to handle kernel NULL pointer dereference at virtual address 00000000
+ printing eip:
+c041d2aa
+*pde = 00000000
+Oops: 0002 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c041d2aa>]    Not tainted VLI
+EFLAGS: 00010012   (2.6.18-8.el5 #1) 
+EIP is at dequeue_task+0x9/0x26
+eax: c0660bc8   ebx: c0660bc8   ecx: c0660bc8   edx: 00000000
+esi: 00000000   edi: c0612ba5   ebp: c06d3f64   esp: c06d3f5c
+ds: 007b   es: 007b   ss: 0068
+Process  (pid: -1067054144, ti=c06d3000 task=c0660bc8 task.ti=00002000)
+Stack: c0660bc8 c1404ce0 c06d3f70 c041d2e0 c0660bc8 c06d3fd4 c05fa558 00000000 
+       c0711de4 00000000 c040492e 00000001 c0660bc8 c06d3000 59758188 0000001c 
+       0d72b14d 00000000 c0660cd4 c1404ce0 fffffffa c0402bcc 00000060 00000246 
+Call Trace:
+ [<c041d2e0>] deactivate_task+0x19/0x23
+ [<c05fa558>] schedule+0x1ac/0x9ba
+ [<c040492e>] common_interrupt+0x1a/0x20
+ [<c0402bcc>] default_idle+0x34/0x59
+ [<c0414e87>] apm_cpu_idle+0x19a/0x1ee
+ [<c0402ca8>] cpu_idle+0xb7/0xb9
+ [<c06d8798>] start_kernel+0x380/0x387
+ =======================
+Code: 04 8b 40 10 03 1c 85 80 1b 6d c0 39 de 74 0b 8b 17 89 f0 e8 c9 f1 1d 00 eb be 59 89 f0 5b 5e 5f 5d c3 55 89 e5 56 89 d6 53 89 c3 <ff> 0a 8d 40 24 e8 94 2f 0c 00 8b 53 18 8d 44 d6 18 39 00 75 04 
+EIP: [<c041d2aa>] dequeue_task+0x9/0x26 SS:ESP 0068:c06d3f5c
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+list_del corruption. prev->next should be ddaf3000, but was ddaf3010
+------------[ cut here ]------------
+kernel BUG at lib/list_debug.c:65!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c04e0260>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at list_del+0x18/0x5c
+eax: 00000048   ebx: ddaf3000   ecx: c06297c6   edx: dffeaf10
+esi: dfff7c40   edi: ddaf3128   ebp: dfdcfa80   esp: dffeaf0c
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c06297c6 ddaf3000 ddaf3010 ddaf3000 c0466c08 c05facb9 00000011 00000000 
+       dfdcd814 dfdcd814 00000011 dfdcd800 dfff7c40 c0466cf5 00000000 dfdcfa80 
+       dfff7c40 dfdcfa80 dfd874c0 00000286 c0468008 00000000 00000000 c1405fe0 
+Call Trace:
+ [<c0466c08>] free_block+0x63/0xdc
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 51 04 8d 46 0c 5b 5e 5f e9 62 00 00 00 89 c3 eb eb 90 90 53 89 c3 8b 40 04 8b 00 39 d8 74 17 50 53 68 c6 97 62 c0 e8 04 3f f4 ff <0f> 0b 41 00 03 98 62 c0 83 c4 0c 8b 03 8b 40 04 39 d8 74 17 50 
+EIP: [<c04e0260>] list_del+0x18/0x5c SS:ESP 0068:dffeaf0c
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+------------[ cut here ]------------
+kernel BUG at mm/slab.c:607!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c0466beb>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at free_block+0x46/0xdc
+eax: 80000000   ebx: dffb9014   ecx: 00000004   edx: c1199980
+esi: 00000004   edi: cccccccc   ebp: dffcd680   esp: dffeaf20
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c05facb9 00000004 00000000 dffb9014 dffb9014 00000004 dffb9000 dfd96c40 
+       c0466cf5 00000000 dffcd680 dfd96c40 dffcd680 dfd874c0 00000286 c0468008 
+       00000000 00000000 c1405fe0 c1405fe4 c043210c c0467f9a 00000000 dfd874d4 
+Call Trace:
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 00 00 00 8b 44 24 0c 8b 38 8d 97 00 00 00 40 c1 ea 0c c1 e2 05 03 15 90 36 79 c0 8b 02 f6 c4 40 74 03 8b 52 0c 8b 02 84 c0 78 08 <0f> 0b 5f 02 05 0f 62 c0 8b 5a 1c 8b 54 24 24 89 d8 8b b4 95 90 
+EIP: [<c0466beb>] free_block+0x46/0xdc SS:ESP 0068:dffeaf20
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+------------[ cut here ]------------
+kernel BUG at mm/slab.c:607!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c0466beb>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at free_block+0x46/0xdc
+eax: 00000000   ebx: dfdc6014   ecx: 00000010   edx: c1800000
+esi: 00000010   edi: 00000000   ebp: dfdc7dc0   esp: dffeaf20
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c05facb9 00000010 00000000 dfdc6014 dfdc6014 00000010 dfdc6000 dfdccc00 
+       c0466cf5 00000000 dfdc7dc0 dfdccc00 dfdc7dc0 dfd874c0 00000286 c0468008 
+       00000000 00000000 c1405fe0 c1405fe4 c043210c c0467f9a 00000000 dfd874d4 
+Call Trace:
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0468008>] cache_reap+0x6e/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 00 00 00 8b 44 24 0c 8b 38 8d 97 00 00 00 40 c1 ea 0c c1 e2 05 03 15 90 36 79 c0 8b 02 f6 c4 40 74 03 8b 52 0c 8b 02 84 c0 78 08 <0f> 0b 5f 02 05 0f 62 c0 8b 5a 1c 8b 54 24 24 89 d8 8b b4 95 90 
+EIP: [<c0466beb>] free_block+0x46/0xdc SS:ESP 0068:dffeaf20
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+list_del corruption. next->prev should be dfe2f000, but was dff60288
+------------[ cut here ]------------
+kernel BUG at lib/list_debug.c:70!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c04e0280>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at list_del+0x38/0x5c
+eax: 00000048   ebx: dfe2f000   ecx: c0629814   edx: dffeaf10
+esi: dff60280   edi: dfe2f820   ebp: dff32480   esp: dffeaf0c
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c0629814 dfe2f000 dff60288 dfe2f000 c0466c08 c05facb9 00000004 00000000 
+       c17b8214 c17b8214 00000004 c17b8200 dff60280 c0466cf5 00000000 dff32480 
+       dff60280 dff32480 dfd874c0 00000286 c0467fdf 00000000 00000000 c1405fe0 
+Call Trace:
+ [<c0466c08>] free_block+0x63/0xdc
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0467fdf>] cache_reap+0x45/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 53 68 c6 97 62 c0 e8 04 3f f4 ff 0f 0b 41 00 03 98 62 c0 83 c4 0c 8b 03 8b 40 04 39 d8 74 17 50 53 68 14 98 62 c0 e8 e4 3e f4 ff <0f> 0b 46 00 03 98 62 c0 83 c4 0c 8b 13 8b 43 04 89 42 04 89 10 
+EIP: [<c04e0280>] list_del+0x38/0x5c SS:ESP 0068:dffeaf0c
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+BUG: unable to handle kernel paging request at virtual address 0002e00b
+ printing eip:
+c041d269
+*pde = 00000000
+Oops: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c041d269>]    Not tainted VLI
+EFLAGS: 00010086   (2.6.18-8.el5 #1) 
+EIP is at task_rq_lock+0x20/0x58
+eax: 0002dffb   ebx: c07101e0   ecx: 00000000   edx: dffafaa2
+esi: c07101e0   edi: dffb0f3c   ebp: dffb0f10   esp: dffb0f00
+ds: 007b   es: 007b   ss: 0068
+Process pmd (pid: 2752512, ti=dffb0000 task=dffafaa2 task.ti=0002dffb)
+Stack: dffafaa2 dffafaa2 00040000 dffb0fc4 dffb0f48 c041f127 00000001 00400000 
+       dd9d5aa0 c05fad3f 00000102 bd967b8a 0000001b c041f195 00000005 00000286 
+       dffb0f84 00040000 00000000 c0414513 dffb0fd0 00000000 c0414730 00000286 
+Call Trace:
+ [<c041f127>] set_cpus_allowed+0x15/0x8c
+ [<c05fad3f>] schedule+0x993/0x9ba
+ [<c041f195>] set_cpus_allowed+0x83/0x8c
+ [<c0414513>] apm_save_cpus+0x1a/0x36
+ [<c0414730>] apm_bios_call+0x1a/0x126
+ [<c042c98e>] lock_timer_base+0x15/0x2f
+ [<c042c9ec>] try_to_del_timer_sync+0x44/0x4a
+ [<c042c9fc>] del_timer_sync+0xa/0x14
+ [<c0415638>] apm+0x52f/0x5a4
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c0415109>] apm+0x0/0x5a4
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 89 d0 e8 3c f1 1d 00 89 d8 eb ed 55 89 e5 57 89 d7 56 53 83 ec 04 89 45 f0 9c 58 fa 8b 55 f0 bb e0 01 71 c0 89 07 89 de 8b 42 04 <8b> 40 10 03 34 85 80 1b 6d c0 89 f0 e8 07 f1 1d 00 8b 55 f0 8b 
+EIP: [<c041d269>] task_rq_lock+0x20/0x58 SS:ESP 0068:dffb0f00
+ <0>Kernel panic - not syncing: Fatal exception
+ Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+BUG: unable to handle kernel NULL pointer dereference at virtual address 00000000
+ printing eip:
+dd9e4f73
+*pde = 00000000
+Oops: 0002 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy 8139too 8139cp mii serio_raw ide_cd pcspkr cdrom dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<dd9e4f73>]    Not tainted VLI
+EFLAGS: 00010206   (2.6.18-8.el5 #1) 
+EIP is at 0xdd9e4f73
+eax: 00000005   ebx: 00000000   ecx: 00000001   edx: 01000000
+esi: dd9e4f70   edi: d4e49e00   ebp: dd9e4000   esp: dd9e4edc
+ds: 007b   es: 007b   ss: 0068
+Process echo_server.out (pid: 1648, ti=dd9e4000 task=dd9d5aa0 task.ti=dd9e4000)
+Stack: d4e49c80 c059be95 00000286 00000286 c0669880 c13f46a0 b7f35000 1fa35067 
+       c13f46a0 c045a168 b7f35000 00000000 dd9e4f6c 003ff000 00000000 b7b36000 
+       dd9e4f6c c151db7c b7b35fff c14044e0 00000000 00000000 b7f35000 c045bbea 
+Call Trace:
+ [<c059be95>] sys_accept+0x91/0x1c0
+ [<c045a168>] unmap_vmas+0x363/0x4ff
+ [<c045bbea>] free_pgtables+0x86/0x93
+ [<c045c8af>] unmap_region+0xd1/0xf0
+ [<c059c06c>] sys_socketcall+0xa8/0x19e
+ [<c0406eb0>] do_syscall_trace+0xab/0xb1
+ [<c0403eff>] syscall_call+0x7/0xb
+ =======================
+Code: 6c 4f 9e dd e0 44 40 c1 40 d7 ec dd bc c6 67 c1 24 42 f3 dd 00 00 00 00 af c8 45 c0 00 00 00 00 46 02 00 00 e9 ff ff ff 40 7e 7f <c1> 03 00 00 00 a0 7c b6 00 04 00 00 00 00 40 9e dd 6c c0 59 c0 
+EIP: [<dd9e4f73>] 0xdd9e4f73 SS:ESP 0068:dd9e4edc
+ <0>Kernel panic - not syncing: Fatal exception
+ 

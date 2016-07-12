@@ -1,0 +1,151 @@
+#include <stdio.h>
+#include <string.h>	/* strlen() */
+#include "tcp_util.h"
+
+int tcp_bind( int portno )
+{
+    struct sockaddr_in addr ;
+    int addr_len ;
+    int s ;
+
+	if( (s = socket(PF_INET, SOCK_STREAM, 0)) < 0 )
+	{
+	    perror("socket");
+	    return( -1 );
+	}
+
+	memset( &addr, 0, sizeof(addr) );
+	addr.sin_family = AF_INET ;
+	addr.sin_addr.s_addr = INADDR_ANY ;
+	addr.sin_port = htons( portno );
+
+	if( bind(s,(struct sockaddr *)&addr,sizeof(addr)) < 0 )
+	{
+	    perror("bind");
+	    fprintf(stderr,"port number %d is already used. wait a moment or kill another program.\n", portno );
+	    return( -1 );
+	}
+	if( listen( s, 5 ) < 0 )
+	{
+	    perror("listen");
+	    close( s );
+	    return( -1 );
+	}
+	return( s );
+}
+
+int tcp_accept(int sock_fd){
+  return accept(sock_fd,0,0);
+}
+
+int
+tcp_open_stream( int sock, FILE **inp, FILE **outp )
+{
+    int sock2 ;
+	if( (sock2=dup(sock)) < 0 )
+	{
+	    return( -1 );
+	}
+	if( (*inp = fdopen( sock2, "r" )) == NULL )
+	{
+	    close( sock2 );
+	    return( -1 );
+	}
+	if( (*outp = fdopen( sock, "w" )) == NULL )
+	{
+	    fclose( *inp );
+	    *inp = 0 ;
+	    return( -1 );
+	}
+	setvbuf(*outp, (char *)NULL, _IOLBF, 0);
+	return( 0 );
+}
+
+static int sockaddr_in_init( struct sockaddr_in *addr, int addrlen,char *hostname, int portno ){
+    struct addrinfo hints, *ai;
+    int err ;
+    
+    if( addrlen < sizeof(struct sockaddr_in) ){
+      fprintf(stderr,"sockaddr_in, not enough space (%d) > (%d)\n",addrlen, sizeof(struct sockaddr_in) );
+      return( -1 );
+    }
+    memset( &hints, 0, sizeof(hints) );
+    hints.ai_family   = AF_INET ; /* IPv4 */
+    if( (err = getaddrinfo( hostname, NULL, &hints, &ai )) ){
+      fprintf(stderr,"unknown host %s (%s)\n",hostname,gai_strerror(err) );
+                  return( -1 );
+    }
+    if( ai->ai_addrlen > addrlen ){
+      fprintf(stderr,"sockaddr too large (%d) > (%d)\n",ai->ai_addrlen,sizeof(addr) );
+      freeaddrinfo( ai );
+      return( -1 );
+    }
+    memcpy( addr, ai->ai_addr, ai->ai_addrlen );
+    addr->sin_port = htons( portno );
+    freeaddrinfo( ai );
+  
+    return( 0 );
+}
+
+int
+tcp_connect( char *server, int portno )
+{
+  struct addrinfo hints, *ai;
+  struct sockaddr_in addr ;   /* IPv4 */
+  int s ;
+  int err ;
+  
+  if( (s = socket(PF_INET, SOCK_STREAM, 0)) < 0 ){
+    perror("socket");
+    return( -1 );
+  }
+  if( sockaddr_in_init( &addr, sizeof(addr), server, portno )<0 ){
+      perror("sockaddr_in_init");
+      return( -1 );
+  }
+  if( connect(s, (struct sockaddr *)&addr, sizeof(addr)) < 0 ){
+      perror( server );
+      close( s );
+      return( -1 );
+  }
+  return( s );
+}
+
+void
+tcp_print_host( int portno )
+{
+    char hostname[100] ;
+	gethostname( hostname,sizeof(hostname) );
+	hostname[99] = 0 ;
+	printf("open http://%s:%d/[filepath]\n",hostname, portno );
+}
+
+void
+static tcp_print_sockaddr( struct sockaddr *addrp, socklen_t addr_len )
+{
+    char host[BUFFERSIZE] ;
+    char port[BUFFERSIZE] ;
+	if( getnameinfo(addrp, addr_len, host, sizeof(host),
+			port, sizeof(port), NI_NUMERICHOST|NI_NUMERICSERV)<0 )
+	    return;
+    	printf("%s:%s", host, port );
+}
+
+void
+tcp_print_peeraddr( int socket )
+{
+    struct sockaddr_storage addr ;
+    socklen_t addr_len ; /* MacOSX: __uint32_t */
+	addr_len = sizeof( addr );
+    	if( getpeername( socket, (struct sockaddr *)&addr, &addr_len  )<0 )
+	{
+	    perror("tcp_peeraddr_print");
+	    return;
+	}
+    	printf("[%d] connection (fd==%d) from ",getpid(),socket );
+	tcp_print_sockaddr( (struct sockaddr *)&addr, addr_len );
+	printf("\n");
+}
+
+
+

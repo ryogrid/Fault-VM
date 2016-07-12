@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdarg.h>
+#include "file_util.h"
+
+FILE *file_open(char *filename){
+  FILE *fp;
+
+  fp = fopen(filename,"w");
+  if(fp == NULL){
+    printf("file open failed\n");
+    return 0;
+  }
+  return fp;
+}
+
+int file_close(FILE *fp){
+  fclose(fp);
+}
+
+int file_write_line(FILE *fp,char *str){
+  fputs(str,fp);
+  fputs("\n",fp);
+}
+
+/* int main(){ */
+/*   FILE *fp = file_open("test.txt"); */
+/*   file_write_line(fp,"hoge"); */
+/*   file_write_line(fp,"hoge"); */
+/*   file_write_line(fp,"hoge"); */
+/*   file_close(fp); */
+/* } */

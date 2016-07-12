@@ -1,0 +1,22 @@
+heartbeat[1829]: 2008/01/09_17:50:23 info: Link lv0:eth0 dead.
+harc[24572]:    2008/01/09_17:50:23 info: Running /etc/ha.d/rc.d/status status
+heartbeat[24573]: 2008/01/09_17:50:23 info: No local resources [/usr/share/heartbeat/ResourceManager listkeys lv1] to acquire.
+mach_down[24600]:       2008/01/09_17:50:24 info: Taking over resource group IPaddr::192.168.1.1/24
+ResourceManager[24625]: 2008/01/09_17:50:24 info: Acquiring resource group: lv0 IPaddr::192.168.1.1/24 IPaddr::192.168.2.1/24 ldirectord
+IPaddr[24651]:  2008/01/09_17:50:25 INFO:  Resource is stopped
+ResourceManager[24625]: 2008/01/09_17:50:25 info: Running /etc/ha.d/resource.d/IPaddr 192.168.1.1/24 start
+IPaddr[24740]:  2008/01/09_17:50:25 INFO: Using calculated nic for 192.168.1.1: eth0
+IPaddr[24740]:  2008/01/09_17:50:25 INFO: Using calculated netmask for 192.168.1.1: 255.255.255.0
+IPaddr[24740]:  2008/01/09_17:50:26 INFO: eval ifconfig eth0:0 192.168.1.1 netmask 255.255.255.0 broadcast 192.168.1.255
+IPaddr[24714]:  2008/01/09_17:50:26 INFO:  Success
+IPaddr[24845]:  2008/01/09_17:50:26 INFO:  Resource is stopped
+ResourceManager[24625]: 2008/01/09_17:50:27 info: Running /etc/ha.d/resource.d/IPaddr 192.168.2.1/24 start
+IPaddr[24934]:  2008/01/09_17:50:28 INFO: Using calculated nic for 192.168.2.1: eth1
+IPaddr[24934]:  2008/01/09_17:50:28 INFO: Using calculated netmask for 192.168.2.1: 255.255.255.0
+IPaddr[24934]:  2008/01/09_17:50:29 INFO: eval ifconfig eth1:0 192.168.2.1 netmask 255.255.255.0 broadcast 192.168.2.255
+IPaddr[24908]:  2008/01/09_17:50:30 INFO:  Success
+ResourceManager[24625]: 2008/01/09_17:50:34 info: Running /etc/ha.d/resource.d/ldirectord  start
+mach_down[24600]:       2008/01/09_17:50:37 info: /usr/share/heartbeat/mach_down: nice_failback: foreign resources acquired
+mach_down[24600]:       2008/01/09_17:50:37 info: mach_down takeover complete for node lv0.
+heartbeat[1829]: 2008/01/09_17:50:37 info: mach_down takeover complete.
+

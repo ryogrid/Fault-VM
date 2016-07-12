@@ -1,0 +1,3 @@
+extern int file_open(char *filename);
+extern int file_close(File *fp);
+extern file_write_line(File *fp,char *str);

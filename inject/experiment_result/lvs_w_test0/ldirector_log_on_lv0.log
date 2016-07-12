@@ -1,0 +1,2 @@
+[Wed Jan  9 15:15:29 2008|ldirectord|2420] Quiescent real server: 192.168.2.10:80 (192.168.1.1:80) (Weight set to 0)
+[Wed Jan  9 15:24:46 2008|ldirectord|2420] Restored real server: 192.168.2.10:80 (192.168.1.1:80) (Weight set to 1)

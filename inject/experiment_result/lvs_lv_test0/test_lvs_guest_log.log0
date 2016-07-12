@@ -1,0 +1,780 @@
+Trying 127.0.0.1...
+Connected to localhost.localdomain (127.0.0.1).
+Escape character is '^]'.
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=12f
+hg=476c0a6e
+ts=477846d6
+ld=0.25 0.13 0.06 8/74 4349
+ttl=3
+auth=1 7d2f8245
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=130
+hg=476c0a6e
+ts=477846d8
+ld=0.23 0.13 0.06 2/74 4349
+ttl=3
+auth=1 4f94d661
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=131
+hg=476c0a6e
+ts=477846da
+ld=0.23 0.13 0.06 3/74 4349
+ttl=3
+auth=1 c44c6c20
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=132
+hg=476c0a6e
+ts=477846dc
+ld=0.21 0.13 0.05 6/74 4349
+ttl=3
+auth=1 b38cd80d
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=133
+hg=476c0a6e
+ts=477846de
+ld=0.21 0.13 0.05 1/74 4350
+ttl=3
+auth=1 cbc41ef6
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=134
+hg=476c0a6e
+ts=477846e0
+ld=0.21 0.13 0.05 1/74 4350
+ttl=3
+auth=1 c53e452d
+<<<
+>>>
+t=NS_ackmsg
+dest=lv0
+ackseq=135
+(1)destuuid=w7o1Fj4udSfrkqZmxTaURQ==
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+hg=476c0a6e
+ts=477846e2
+ttl=3
+auth=1 5f3e4df6
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=135
+hg=476c0a6e
+ts=477846e2
+ld=0.19 0.13 0.05 1/74 4350
+ttl=3
+auth=1 457eb7b
+<<<
+>>>
+t=NS_ackmsg
+dest=lv1
+ackseq=8b05
+(1)destuuid=7bEAsXIU8MmQWJC1Jr3qDA==
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+hg=476c0a6e
+ts=477846e3
+ttl=3
+auth=1 2440607b
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=136
+hg=476c0a6e
+ts=477846e4
+ld=0.19 0.13 0.05 1/74 4350
+ttl=3
+auth=1 f8364a82
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=137
+hg=476c0a6e
+ts=477846e6
+ld=0.18 0.12 0.05 1/74 4350
+ttl=3
+auth=1 ab2b835e
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=138
+hg=476c0a6e
+ts=477846e8
+ld=0.18 0.12 0.05 1/74 4350
+ttl=3
+auth=1 df028694
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=139
+hg=476c0a6e
+ts=477846ea
+ld=0.18 0.12 0.05 1/74 4350
+ttl=3
+auth=1 7b6d83ef
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=13a
+hg=476c0a6e
+ts=477846ec
+ld=0.16 0.12 0.05 1/74 4350
+ttl=3
+auth=1 a265a68c
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=13b
+hg=476c0a6e
+ts=477846ee
+ld=0.16 0.12 0.05 1/74 4350
+ttl=3
+auth=1 5e040775
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=13c
+hg=476c0a6e
+ts=477846f0
+ld=0.15 0.12 0.05 1/74 4350
+ttl=3
+auth=1 a744cfd3
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=13d
+hg=476c0a6e
+ts=477846f2
+ld=0.15 0.12 0.05 2/74 4350
+ttl=3
+auth=1 dabb8290
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=13e
+hg=476c0a6e
+ts=477846f4
+ld=0.15 0.12 0.05 1/74 4350
+ttl=3
+auth=1 61001311
+<<<
+>>>
+t=NS_ackmsg
+dest=lv0
+ackseq=13f
+(1)destuuid=w7o1Fj4udSfrkqZmxTaURQ==
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+hg=476c0a6e
+ts=477846f6
+ttl=3
+auth=1 9fa5692
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=13f
+hg=476c0a6e
+ts=477846f6
+ld=0.14 0.12 0.05 2/74 4350
+ttl=3
+auth=1 738bc365
+<<<
+>>>
+t=NS_ackmsg
+dest=lv1
+ackseq=8b0f
+(1)destuuid=7bEAsXIU8MmQWJC1Jr3qDA==
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+hg=476c0a6e
+ts=477846f7
+ttl=3
+auth=1 72847b1f
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=140
+hg=476c0a6e
+ts=477846f8
+ld=0.14 0.12 0.05 2/74 4350
+ttl=3
+auth=1 3d490f80
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=141
+hg=476c0a6e
+ts=477846fa
+ld=0.13 0.11 0.05 1/74 4350
+ttl=3
+auth=1 e57ccd44
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=142
+hg=476c0a6e
+ts=477846fc
+ld=0.13 0.11 0.05 1/74 4350
+ttl=3
+auth=1 865ea325
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=143
+hg=476c0a6e
+ts=477846fe
+ld=0.12 0.11 0.05 2/74 4350
+ttl=3
+auth=1 3c944dff
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=144
+hg=476c0a6e
+ts=47784700
+ld=0.12 0.11 0.05 1/74 4350
+ttl=3
+auth=1 922227b3
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=145
+hg=476c0a6e
+ts=47784702
+ld=0.12 0.11 0.05 1/74 4351
+ttl=3
+auth=1 9da3642e
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=146
+hg=476c0a6e
+ts=47784704
+ld=0.11 0.11 0.05 2/74 4351
+ttl=3
+auth=1 12898574
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=147
+hg=476c0a6e
+ts=47784706
+ld=0.11 0.11 0.05 2/74 4351
+ttl=3
+auth=1 46a91a23
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=148
+hg=476c0a6e
+ts=47784708
+ld=0.10 0.11 0.05 1/74 4351
+ttl=3
+auth=1 4329a1fc
+<<<
+>>>
+t=NS_ackmsg
+dest=lv0
+ackseq=149
+(1)destuuid=w7o1Fj4udSfrkqZmxTaURQ==
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+hg=476c0a6e
+ts=4778470a
+ttl=3
+auth=1 54ec5064
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=149
+hg=476c0a6e
+ts=4778470a
+ld=0.10 0.11 0.05 7/74 4351
+ttl=3
+auth=1 6f7261b
+<<<
+>>>
+t=NS_ackmsg
+dest=lv1
+ackseq=8b19
+(1)destuuid=7bEAsXIU8MmQWJC1Jr3qDA==
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+hg=476c0a6e
+ts=4778470b
+ttl=3
+auth=1 c1666ea4
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=14a
+hg=476c0a6e
+ts=4778470c
+ld=0.10 0.11 0.05 3/74 4351
+ttl=3
+auth=1 6d8d0692
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=14b
+hg=476c0a6e
+ts=4778470e
+ld=0.09 0.11 0.05 5/74 4351
+ttl=3
+auth=1 f19e6c3
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=14c
+hg=476c0a6e
+ts=47784710
+ld=0.09 0.11 0.05 1/74 4351
+ttl=3
+auth=1 e63a52aa
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=14d
+hg=476c0a6e
+ts=47784712
+ld=0.08 0.10 0.05 1/74 4351
+ttl=3
+auth=1 ec20882c
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=14e
+hg=476c0a6e
+ts=47784714
+ld=0.08 0.10 0.05 1/74 4351
+ttl=3
+auth=1 2743d8e3
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=14f
+hg=476c0a6e
+ts=47784716
+ld=0.08 0.10 0.05 1/74 4351
+ttl=3
+auth=1 4461b682
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=150
+hg=476c0a6e
+ts=47784719
+ld=0.08 0.10 0.05 5/74 4351
+ttl=3
+auth=1 cee07461
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=151
+hg=476c0a6e
+ts=4778471b
+ld=0.08 0.10 0.05 3/74 4351
+ttl=3
+auth=1 c49f144a
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=152
+hg=476c0a6e
+ts=4778471d
+ld=0.07 0.10 0.05 5/74 4351
+ttl=3
+auth=1 d492b176
+<<<
+>>>
+t=NS_ackmsg
+dest=lv0
+ackseq=153
+(1)destuuid=w7o1Fj4udSfrkqZmxTaURQ==
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+hg=476c0a6e
+ts=4778471f
+ttl=3
+auth=1 4023253a
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=153
+hg=476c0a6e
+ts=4778471f
+ld=0.07 0.10 0.05 1/74 4351
+ttl=3
+auth=1 3e6cd2c9
+<<<
+>>>
+t=NS_ackmsg
+dest=lv1
+ackseq=8b23
+(1)destuuid=7bEAsXIU8MmQWJC1Jr3qDA==
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+hg=476c0a6e
+ts=47784720
+ttl=3
+auth=1 2e9bdbe1
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=154
+hg=476c0a6e
+ts=47784721
+ld=0.07 0.10 0.05 2/74 4351
+ttl=3
+auth=1 a2c1ae5a
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=155
+hg=476c0a6e
+ts=47784723
+ld=0.06 0.10 0.05 2/74 4351
+ttl=3
+auth=1 f7904e56
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=156
+hg=476c0a6e
+ts=47784725
+ld=0.06 0.10 0.05 2/74 4351
+ttl=3
+auth=1 bf1efaf
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=157
+hg=476c0a6e
+ts=47784727
+ld=0.06 0.10 0.05 1/74 4352
+ttl=3
+auth=1 c3ebd4e8
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=158
+hg=476c0a6e
+ts=47784729
+ld=0.06 0.10 0.05 2/74 4352
+ttl=3
+auth=1 c71a106c
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=159
+hg=476c0a6e
+ts=4778472b
+ld=0.06 0.10 0.05 2/74 4352
+ttl=3
+auth=1 2cd4f2db
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=15a
+hg=476c0a6e
+ts=4778472d
+ld=0.05 0.10 0.05 2/74 4352
+ttl=3
+auth=1 65a060cf
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=15b
+hg=476c0a6e
+ts=4778472f
+ld=0.05 0.10 0.05 2/74 4352
+ttl=3
+auth=1 6820eae
+<<<
+>>>
+t=status
+st=active
+dt=7530
+protocol=1
+src=lv0
+(1)srcuuid=w7o1Fj4udSfrkqZmxTaURQ==
+seq=15c
+hg=476c0a6e
+ts=47784731
+ld=0.05 0.09 0.05 1/74 4352
+ttl=3
+auth=1 c849a4f
+<<<
+list_del corruption. prev->next should be dfe2e000, but was dfe2e008
+------------[ cut here ]------------
+kernel BUG at lib/list_debug.c:65!
+invalid opcode: 0000 [#1]
+SMP 
+last sysfs file: /block/hda/removable
+Modules linked in: ip_vs_rr ip_vs autofs4 hidp l2cap bluetooth sunrpc ipv6 parport_pc lp parport floppy serio_raw 8139too ide_cd cdrom 8139cp mii pcspkr dm_snapshot dm_zero dm_mirror dm_mod ext3 jbd ehci_hcd ohci_hcd uhci_hcd
+CPU:    0
+EIP:    0060:[<c04e0260>]    Not tainted VLI
+EFLAGS: 00010046   (2.6.18-8.el5 #1) 
+EIP is at list_del+0x18/0x5c
+eax: 00000048   ebx: dfe2e000   ecx: c06297c6   edx: dffeaf10
+esi: dfd96cc0   edi: dfe2ec90   ebp: dffcd880   esp: dffeaf0c
+ds: 007b   es: 007b   ss: 0068
+Process events/0 (pid: 5, ti=dffea000 task=dfd94550 task.ti=dffea000)
+Stack: c06297c6 dfe2e000 dfe2e008 dfe2e000 c0466c08 c05facb9 00000004 00000000 
+       dffcc414 dffcc414 00000004 dffcc400 dfd96cc0 c0466cf5 00000000 dffcd880 
+       dfd96cc0 dffcd880 dfd874c0 00000286 c0467fdf 00000000 00000000 c1405fe0 
+Call Trace:
+ [<c0466c08>] free_block+0x63/0xdc
+ [<c05facb9>] schedule+0x90d/0x9ba
+ [<c0466cf5>] drain_array+0x74/0x93
+ [<c0467fdf>] cache_reap+0x45/0x100
+ [<c043210c>] run_workqueue+0x78/0xb5
+ [<c0467f9a>] cache_reap+0x0/0x100
+ [<c04329c0>] worker_thread+0xd9/0x10d
+ [<c041dc4d>] default_wake_function+0x0/0xc
+ [<c04328e7>] worker_thread+0x0/0x10d
+ [<c0434d99>] kthread+0xc0/0xeb
+ [<c0434cd9>] kthread+0x0/0xeb
+ [<c0404c3b>] kernel_thread_helper+0x7/0x10
+ =======================
+Code: 51 04 8d 46 0c 5b 5e 5f e9 62 00 00 00 89 c3 eb eb 90 90 53 89 c3 8b 40 04 8b 00 39 d8 74 17 50 53 68 c6 97 62 c0 e8 04 3f f4 ff <0f> 0b 41 00 03 98 62 c0 83 c4 0c 8b 03 8b 40 04 39 d8 74 17 50 
+EIP: [<c04e0260>] list_del+0x18/0x5c SS:ESP 0068:dffeaf0c
+ <0>Kernel panic - not syncing: Fatal exception
+ 
+telnet> Connection closed.
